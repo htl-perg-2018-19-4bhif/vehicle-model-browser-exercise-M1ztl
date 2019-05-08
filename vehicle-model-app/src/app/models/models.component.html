@@ -1,0 +1,24 @@
+<select  [(ngModel)]="selectedY">
+  <option *ngFor="let year of years">{{year}}</option>
+</select> 
+<select [(ngModel)]="selectedM">
+  <option *ngFor="let make of makes">{{make}}</option>
+</select> 
+
+<button (click)="filterList()">Refresh</button> <br> <br>
+
+<table style="width:100%">
+    <tr>
+      <th>Year</th>
+      <th>Make</th>
+      <th>Model</th>
+    </tr>
+    <tr *ngFor="let model of models">
+      <td>{{model.year}}</td>
+      <td>{{model.make}}</td>
+      <td>{{model.model}}</td>
+    </tr>
+
+  </table> 
+
+<button (click)="cancel()">Back to menu</button>

@@ -1,0 +1,10 @@
+a {
+    color: blue;
+    text-align:center;
+}
+a:hover {
+    color: red;
+}
+.links{
+    text-align: center;
+  }
